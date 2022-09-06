@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <AppBar position="sticky">
+      <AppBar position="sticky" className='bg-gray-700'>
         <Toolbar>
         </Toolbar>
       </AppBar>
