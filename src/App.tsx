@@ -1,4 +1,4 @@
-import { AppBar, Box, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Divider, TextField, Toolbar, Typography } from '@mui/material';
 import './App.css';
 
 function App() {
@@ -8,16 +8,26 @@ function App() {
         <Toolbar>
         </Toolbar>
       </AppBar>
-      <Box className='flex'>
+      <Box className='flex pt-10'>
         <Box className='w-1/2'>
-          <Typography>
-            Write your text
-          </Typography>
+          <Box className='flex items-center flex-col'>
+            <Typography variant='h4'>
+              Write your text
+            </Typography>
+            <TextField
+              id="outlined-multiline-static"
+              multiline
+              variant="standard"
+            />
+          </Box>
         </Box>
+        <Divider orientation="vertical" flexItem />
         <Box className='w-1/2'>
-          <Typography>
-            Hieroglyphs
-          </Typography>
+          <Box className='flex items-center flex-col'>
+            <Typography variant='h4'>
+              Hieroglyphs
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </>
