@@ -1,4 +1,5 @@
 import { Box, TextField, Typography } from "@mui/material";
+import Textarea from '@mui/joy/Textarea';
 
 export default function English(props: any) {
     const { value, setValue } = props;
@@ -10,11 +11,10 @@ export default function English(props: any) {
                     <Typography variant='h4'>
                         Write your text
                     </Typography>
-                    <Box className="pt-20">
-                        <TextField
-                            multiline
+                    <Box className="pt-20 min-w-full">
+                        <Textarea
                             variant="outlined"
-                            className="w-max"
+                            minRows={4}
                             value={value}
                             onChange={(e) => setValue(e?.target?.value)}
                         />

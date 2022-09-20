@@ -14,7 +14,7 @@ function App() {
         </Toolbar>
       </AppBar>
 
-      <Box className='flex pt-10'>
+      <Box className='flex'>
         <English value={value} setValue={setValue} />
         <Divider orientation="vertical" flexItem />
         <Hieroglyphs value={value} />
