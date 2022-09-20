@@ -1,6 +1,8 @@
-import { Box, Typography } from "@mui/material";
+import { Box, TextField, Typography } from "@mui/material";
 
-export default function Hieroglyphs() {
+export default function Hieroglyphs(props: any) {
+    const { value } = props;
+
     return (
         <>
             <Box className='w-1/2'>
@@ -8,6 +10,7 @@ export default function Hieroglyphs() {
                     <Typography variant='h4'>
                         Hieroglyphs
                     </Typography>
+                    {value}
                 </Box>
             </Box>
         </>
