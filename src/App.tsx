@@ -1,5 +1,7 @@
 import { AppBar, Box, Divider, TextField, Toolbar, Typography } from '@mui/material';
 import './App.css';
+import English from './English';
+import Hieroglyphs from './Hieroglyphs';
 
 function App() {
   return (
@@ -8,27 +10,11 @@ function App() {
         <Toolbar>
         </Toolbar>
       </AppBar>
+
       <Box className='flex pt-10'>
-        <Box className='w-1/2'>
-          <Box className='flex items-center flex-col'>
-            <Typography variant='h4'>
-              Write your text
-            </Typography>
-            <TextField
-              id="outlined-multiline-static"
-              multiline
-              variant="standard"
-            />
-          </Box>
-        </Box>
+        <English />
         <Divider orientation="vertical" flexItem />
-        <Box className='w-1/2'>
-          <Box className='flex items-center flex-col'>
-            <Typography variant='h4'>
-              Hieroglyphs
-            </Typography>
-          </Box>
-        </Box>
+        <Hieroglyphs />
       </Box>
     </>
   );
