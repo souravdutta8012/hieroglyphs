@@ -1,4 +1,4 @@
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 export default function Hieroglyphs(props: any) {
     const { value } = props;
