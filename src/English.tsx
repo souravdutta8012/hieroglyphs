@@ -5,18 +5,20 @@ export default function English(props: any) {
 
     return (
         <>
-            <Box className='w-1/2'>
+            <Box className='w-1/2 p-5'>
                 <Box className='flex items-center flex-col'>
                     <Typography variant='h4'>
                         Write your text
                     </Typography>
-                    <TextField
-                        id="outlined-multiline-static"
-                        multiline
-                        variant="standard"
-                        value={value}
-                        onChange={(e) => setValue(e?.target?.value)}
-                    />
+                    <Box className="pt-20">
+                        <TextField
+                            multiline
+                            variant="outlined"
+                            className="w-max"
+                            value={value}
+                            onChange={(e) => setValue(e?.target?.value)}
+                        />
+                    </Box>
                 </Box>
             </Box>
         </>

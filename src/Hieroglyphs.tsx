@@ -5,12 +5,14 @@ export default function Hieroglyphs(props: any) {
 
     return (
         <>
-            <Box className='w-1/2'>
+            <Box className='w-1/2 p-5'>
                 <Box className='flex items-center flex-col'>
                     <Typography variant='h4'>
                         Hieroglyphs
                     </Typography>
-                    {value}
+                    <Box className="pt-20">
+                        {value}
+                    </Box>
                 </Box>
             </Box>
         </>
